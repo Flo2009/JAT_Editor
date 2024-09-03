@@ -29,6 +29,8 @@ module.exports = () => {
       }),
       
       new WebpackPwaManifest({
+        fingerprints: false,
+        inject: true,
         name: 'JATE',
         short_name: 'JATE',
         description: 'Keep track of important posts!',
